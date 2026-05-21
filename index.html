@@ -7,6 +7,16 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="CalcSheet">
 <title>CalcSheet</title>
+ <!-- Load Supabase Library -->
+<script src="https://jsdelivr.net"></script>
+
+<script>
+  // Connect to your cloud database
+  const supabaseUrl = 'PASTE_YOUR_SUPABASE_URL_HERE';
+  const supabaseKey = 'PASTE_YOUR_SUPABASE_ANON_KEY_HERE';
+  const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+  console.log("Supabase connection initialized!");
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html,body{height:100%;overflow:hidden;}
